@@ -1,7 +1,14 @@
 <template>
 <div :class="`hps-logo${bars ? ' hps-logo--bars' : ''}`" :style="`font-size:${size}`">
   <div class="hps-logo__icon">
-    <q-icon name="svguse:/logo.svg#heilkundepraxis|0 0 189 189" size="1em" />
+    <q-img
+      src="/logo.png"
+      srcset="/logo.png 600w, /logo-2x.png 1024w, /logo-4x.png 1440w"
+      placeholder-src="/logo.png"
+      fetchpriority="high"
+      :ratio="1"
+      no-spinner
+    />
   </div>
 </div>
 </template>
@@ -32,8 +39,8 @@ export default defineComponent({
 
     &::before,
     &::after {
-      content: '';
       border-radius: 10rem;
+      content: '';
       position: absolute;
     }
 
