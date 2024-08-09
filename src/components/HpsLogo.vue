@@ -47,7 +47,7 @@ export default defineComponent({
     &::after {
       border: 0.0525em solid $primary;
       height: 0.825em;
-      left: 0.05em;
+      left: 0.06em;
       top: 0.475em;
       width: 0.825em;
       z-index: -1;
@@ -56,7 +56,7 @@ export default defineComponent({
     &::before {
       background-color: $white;
       height: 0.8875em;
-      left: 0.01815em;
+      left: 0.02815em;
       top: 0.44375em;
       width: 0.8875em;
       z-index: -2;
