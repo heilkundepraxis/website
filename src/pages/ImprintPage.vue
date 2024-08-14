@@ -3,9 +3,7 @@
     <h1 class="text-h1">Impressum</h1>
 
     <h2 class="text-h2">Eigentümer gemäß § 5 TMG</h2>
-    <p>Elfriede Steil<br />
-      Postweg 4<br />
-      83246 Unterwössen</p>
+    <p><hps-address name /></p>
 
     <h3>Kontakt</h3>
     <p><hps-contact /></p>
@@ -50,12 +48,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+import HpsAddress from 'components/HpsAddress.vue';
 import HpsContact from 'components/HpsContact.vue';
 
 export default defineComponent({
   name: 'ImprintPage',
 
   components: {
+    HpsAddress,
     HpsContact,
   },
 });

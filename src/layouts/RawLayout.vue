@@ -1,12 +1,12 @@
 <template>
   <q-layout view="hhh lpr fff">
     <div class="row q-my-xl container">
-      <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="col-12 col-xl-10 offset-xl-1">
         <div class="main-content">
           <router-link to="/" class="title">
-            <div class="title__name">
+            <h1 class="title__name">
               Elfriede Steil
-            </div>
+            </h1>
             <div class="title__profession">
               Heilpraktikerin &amp; Physiotherapeutin
             </div>
@@ -27,7 +27,8 @@
 
           <p class="q-pt-sm" style="font-size:0.75rem">&copy; {{ new Date().getFullYear() }}
             Elfriede Steil.
-            Alle Rechte vorbehalten</p>
+            Alle Rechte vorbehalten.
+          </p>
         </div>
       </div>
     </div>
@@ -68,6 +69,7 @@ export default defineComponent({
   &__name {
     font-size: 2.25rem;
     font-weight: bold;
+    letter-spacing: normal;
     line-height: 1.25;
     margin-bottom: 0;
     margin-top: 0;

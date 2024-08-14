@@ -17,7 +17,7 @@
 
   <section class="col-12 col-sm-6 col-md-4">
     <div class="q-pa-sm full-height bg-accent">
-      <div class="text-h4 q-mb-md">Öffnungszeiten</div>
+      <div class="text-h4 q-mb-md">Behandlungszeiten</div>
 
       <hps-business-hours />
     </div>

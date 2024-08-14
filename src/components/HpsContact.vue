@@ -3,9 +3,12 @@
   <div
     v-for="item in contactTypes"
     :key="item.type"
+    class="row"
   >
-    <span class="contact__type">{{ item.type }}:</span>
-    <a :href="item.href" :class="`text-${color}`">{{ item.label }}</a>
+    <div class="contact__type col-auto">{{ item.type }}:</div>
+    <div class="col">
+      <a :href="item.href" :class="`text-${color}`">{{ item.label }}</a>
+    </div>
   </div>
 </div>
 </template>
@@ -30,7 +33,7 @@ export default defineComponent({
         {
           type: 'mail',
           href: 'mailto:info@heilkundepraxis-steil.de',
-          label: 'E-Mail senden',
+          label: 'info@heilkundepraxis-steil.de',
         },
       ],
     };

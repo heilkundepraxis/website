@@ -7,7 +7,7 @@
 
       <ul class="q-pl-lg">
         <li>
-          <a href="#verantwortliche">Verantwortliche</a>
+          <a href="#verantwortliches">Verantwortliche</a>
         </li>
         <li v-if="false">
           <a href="#widerruf">Widerruf Ihrer Einwilligung zur Datenverarbeitung</a>
@@ -36,8 +36,8 @@
       </ul>
     </section>
 
-    <section id="verantwortliche">
-      <h2>Verantwortliche</h2>
+    <section id="verantwortlicher">
+      <h2>Verantwortlicher</h2>
 
       <p><hps-address name /></p>
 

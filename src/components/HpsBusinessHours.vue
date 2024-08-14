@@ -14,6 +14,9 @@
       <div v-else>geschlossen</div>
     </div>
   </div>
+  <div class="business-hours__notes">
+    <strong>Termin nur nach Vereinbarung</strong>
+  </div>
 </div>
 </template>
 
@@ -26,11 +29,11 @@ export default defineComponent({
   setup() {
     return {
       businessHours: [
-        { day: 'Montag', hours: '09:00 - 17:00' },
-        { day: 'Dienstag', hours: '09:00 - 17:00' },
-        { day: 'Mittwoch' },
-        { day: 'Donnerstag', hours: '09:00 - 17:00' },
-        { day: 'Freitag', hours: '09:00 - 17:00' },
+        { day: 'Montag', hours: '09:00 - 19:00' },
+        { day: 'Dienstag', hours: '08:00 - 17:00' },
+        { day: 'Mittwoch', hours: '08:00 - 12:00' },
+        { day: 'Donnerstag', hours: '09:00 - 19:00' },
+        { day: 'Freitag' },
       ],
     };
   },
@@ -46,6 +49,10 @@ export default defineComponent({
     @media screen and (min-width: $breakpoint-sm-min) {
       width: 6.25rem;
     }
+  }
+
+  &__notes {
+    padding-top: 0.5rem;
   }
 }
 </style>
