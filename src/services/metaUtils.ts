@@ -32,7 +32,7 @@ export const generateMeta = (title?: string, description?: string) => {
       },
       ogImage: {
         property: 'og:image',
-        content: 'https://www.heilkundepraxis-steil.de/images/heilkundepraxis-steil-heder-logo.png',
+        content: 'https://www.heilkundepraxis-steil.de/images/heilkundepraxis-steil-header-logo.png',
       },
     },
   };
