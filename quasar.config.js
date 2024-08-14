@@ -33,7 +33,7 @@ module.exports = configure((ctx) => ({
   // --> boot files are part of "main.js"
   // https://v2.quasar.dev/quasar-cli-webpack/boot-files
   boot: [
-
+    'i18n',
   ],
 
   // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-css
@@ -95,7 +95,7 @@ module.exports = configure((ctx) => ({
     config: {},
 
     // iconSet: 'material-icons', // Quasar icon set
-    // lang: 'en-US', // Quasar language pack
+    lang: 'de', // Quasar language pack
 
     // For special cases outside of where the auto-import strategy can have an impact
     // (like functional components as one of the examples),
@@ -144,8 +144,8 @@ module.exports = configure((ctx) => ({
 
     manifest: {
       name: 'Heilkundepraxis Elfriede Steil',
-      short_name: 'Heilkundepraxis Steil',
-      description: '',
+      short_name: 'Heilkundepraxis Elfriede Steil',
+      description: 'Praxis für Naturheilkunde und Physiotherapie in Unterwössen und Umgebung.',
       display: 'standalone',
       orientation: 'portrait',
       background_color: '#ffffff',

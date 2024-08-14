@@ -46,10 +46,12 @@
 </template>
 
 <script lang="ts">
+import { useMeta } from 'quasar';
 import { defineComponent } from 'vue';
 
 import HpsAddress from 'components/HpsAddress.vue';
 import HpsContact from 'components/HpsContact.vue';
+import { generateMeta } from 'src/services/metaUtils';
 
 export default defineComponent({
   name: 'ImprintPage',
@@ -57,6 +59,10 @@ export default defineComponent({
   components: {
     HpsAddress,
     HpsContact,
+  },
+
+  setup() {
+    useMeta(() => generateMeta('Impressum'));
   },
 });
 </script>

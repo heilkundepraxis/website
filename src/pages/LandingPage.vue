@@ -26,11 +26,13 @@
 </template>
 
 <script lang="ts">
+import { useMeta } from 'quasar';
 import { defineComponent } from 'vue';
 
 import HpsAddress from 'components/HpsAddress.vue';
 import HpsBusinessHours from 'components/HpsBusinessHours.vue';
 import HpsContact from 'components/HpsContact.vue';
+import { generateMeta } from 'src/services/metaUtils';
 
 export default defineComponent({
   name: 'LandingPage',
@@ -39,6 +41,10 @@ export default defineComponent({
     HpsAddress,
     HpsBusinessHours,
     HpsContact,
+  },
+
+  setup() {
+    useMeta(() => generateMeta());
   },
 });
 </script>

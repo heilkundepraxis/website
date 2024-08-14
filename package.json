@@ -1,8 +1,8 @@
 {
   "name": "heilkundepraxis",
-  "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Heilkundepraxis Steil",
+  "version": "1.0.0",
+  "description": "Praxis für Naturheilkunde und Physiotherapie in Unterwössen und Umgebung.",
+  "productName": "Heilkundepraxis Elfriede Steil",
   "author": "Manuel Schächinger <manuel@schaechinger.com>",
   "private": true,
   "scripts": {

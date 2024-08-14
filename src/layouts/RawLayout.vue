@@ -4,15 +4,13 @@
       <div class="col-12 col-xl-10 offset-xl-1">
         <div class="main-content">
           <router-link to="/" class="title">
-            <h1 class="title__name">
-              Elfriede Steil
-            </h1>
+            <div class="title__name">Elfriede Steil</div>
             <div class="title__profession">
               Heilpraktikerin &amp; Physiotherapeutin
             </div>
           </router-link>
-          <div class="q-my-md">
-            <HpsLogo :size="$q.screen.xs ? '4rem' : '6rem'" bars />
+          <div class="q-my-md logo-bar">
+            <HpsLogo size="1em" bars />
           </div>
           <q-page-container>
             <router-view />
@@ -45,6 +43,10 @@ export default defineComponent({
 
   components: {
     HpsLogo,
+  },
+
+  props: {
+    page: String,
   },
 
   setup() {
@@ -89,6 +91,14 @@ export default defineComponent({
     @media screen and (max-width: $breakpoint-sm-max) {
       font-size: 1.0625rem
     }
+  }
+}
+
+.logo-bar {
+  font-size: 4rem;
+
+  @media screen and (min-width: $breakpoint-sm-min) {
+    font-size: 6rem;
   }
 }
 
