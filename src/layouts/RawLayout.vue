@@ -4,7 +4,7 @@
       <div class="col-12 col-xl-10 offset-xl-1">
         <div class="main-content">
           <router-link to="/" class="title">
-            <div class="title__name">Elfriede Steil</div>
+            <div class="title__name">Elfriede Steil-Schächinger</div>
             <div class="title__profession">
               Heilpraktikerin &amp; Physiotherapeutin
             </div>
@@ -24,7 +24,7 @@
           </div>
 
           <p class="q-pt-sm" style="font-size:0.75rem">&copy; {{ new Date().getFullYear() }}
-            Elfriede Steil.
+            Elfriede Steil-Schächinger.
             Alle Rechte vorbehalten.
           </p>
         </div>

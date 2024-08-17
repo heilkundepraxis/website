@@ -1,4 +1,4 @@
-# Heilkundepraxis Elfriede Steil (heilkundepraxis)
+# Heilkundepraxis Elfriede Steil-Schächinger (heilkundepraxis)
 
 Praxis für Naturheilkunde und Physiotherapie in Unterwössen und Umgebung.
 

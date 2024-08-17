@@ -1,5 +1,5 @@
 export const generateMeta = (title?: string, description?: string) => {
-  const metaTitle = `${title ? `${title} – ` : ''}Heilkundepraxis Elfriede Steil`;
+  const metaTitle = `${title ? `${title} – ` : ''}Heilkundepraxis Elfriede Steil-Schächinger`;
   const metaDescription = description || 'Praxis für Naturheilkunde und Physiotherapie in Unterwössen und Umgebung.';
 
   return {

@@ -143,8 +143,8 @@ module.exports = configure((ctx) => ({
     // chainWebpackCustomSW (/* chain */) {},
 
     manifest: {
-      name: 'Heilkundepraxis Elfriede Steil',
-      short_name: 'Heilkundepraxis Elfriede Steil',
+      name: 'Heilkundepraxis Elfriede Steil-Schächinger',
+      short_name: 'Heilkundepraxis Elfriede Steil-Schächinger',
       description: 'Praxis für Naturheilkunde und Physiotherapie in Unterwössen und Umgebung.',
       display: 'standalone',
       orientation: 'portrait',
