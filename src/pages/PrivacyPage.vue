@@ -1,5 +1,5 @@
 <template>
-  <div class="q-px-md">
+  <q-page class="privacy-page q-px-md">
     <h1 class="text-h1">Datenschutz</h1>
 
     <section id="privacy">
@@ -7,7 +7,7 @@
 
       <ul class="q-pl-lg">
         <li>
-          <a href="#verantwortliches">Verantwortliche</a>
+          <a href="#verantwortliche">Verantwortliche</a>
         </li>
         <li v-if="false">
           <a href="#widerruf">Widerruf Ihrer Einwilligung zur Datenverarbeitung</a>
@@ -36,8 +36,8 @@
       </ul>
     </section>
 
-    <section id="verantwortlicher">
-      <h2>Verantwortlicher</h2>
+    <section id="verantwortliche">
+      <h2>Verantwortliche</h2>
 
       <p><hps-address name /></p>
 
@@ -190,7 +190,7 @@
         separat behandelt.
       </p>
     </section>
-  </div>
+  </q-page>
 </template>
 
 <script lang="ts">

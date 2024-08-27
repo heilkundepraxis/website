@@ -16,6 +16,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+import { EMAIL_ADDRESS, PHONE_NUMBER } from 'src/config';
+
 export default defineComponent({
   name: 'HpsContact',
 
@@ -29,11 +31,11 @@ export default defineComponent({
   setup() {
     return {
       contactTypes: [
-        { type: 'tel', href: 'tel:+4986416953539', label: '08641 695 35 39' },
+        { type: 'tel', href: `tel:${PHONE_NUMBER}`, label: '08641 695 35 39' },
         {
           type: 'mail',
-          href: 'mailto:info@heilkundepraxis-steil.de',
-          label: 'info@heilkundepraxis-steil.de',
+          href: `mailto:${EMAIL_ADDRESS}`,
+          label: EMAIL_ADDRESS,
         },
       ],
     };

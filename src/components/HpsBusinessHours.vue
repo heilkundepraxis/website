@@ -23,18 +23,28 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+import { BUSINESS_HOURS } from 'src/config';
+
 export default defineComponent({
   name: 'HpsBusinessHours',
 
   setup() {
+    const dayMapper = [
+      'Sonntag',
+      'Montag',
+      'Dienstag',
+      'Mittwoch',
+      'Donnerstag',
+      'Freitag',
+      'Samstag',
+      'Sonntag',
+    ];
+
     return {
-      businessHours: [
-        { day: 'Montag', hours: '09:00 - 19:00' },
-        { day: 'Dienstag', hours: '08:00 - 17:00' },
-        { day: 'Mittwoch', hours: '08:00 - 12:00' },
-        { day: 'Donnerstag', hours: '09:00 - 19:00' },
-        { day: 'Freitag' },
-      ],
+      businessHours: BUSINESS_HOURS.map((bh) => ({
+        day: dayMapper[bh.day],
+        hours: bh.opens && `${bh.opens} - ${bh.closes}`,
+      })),
     };
   },
 });

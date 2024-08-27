@@ -1,8 +1,8 @@
 <template>
-  <div class="q-px-md">
+  <q-page class="imprint-page q-px-md">
     <h1 class="text-h1">Impressum</h1>
 
-    <h2 class="text-h2">Eigentümer gemäß § 5 TMG</h2>
+    <h2 class="text-h2">Eigentümerin gemäß § 5 TMG</h2>
     <p><hps-address name /></p>
 
     <h3>Kontakt</h3>
@@ -42,7 +42,7 @@
     <p><strong>Hinweise auf Rechtsverstöße:</strong> Sollten Sie innerhalb meines Internetauftritts
       Rechtsverstöße bemerken, bitte ich Sie mich auf diese hinzuweisen. Ich werde rechtswidrige
       Inhalte und Links nach Kenntnisnahme unverzüglich entfernen.</p>
-  </div>
+    </q-page>
 </template>
 
 <script lang="ts">

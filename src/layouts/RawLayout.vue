@@ -4,7 +4,7 @@
       <div class="col-12 col-xl-10 offset-xl-1">
         <div class="main-content">
           <router-link to="/" class="title">
-            <div class="title__name">Elfriede Steil-Schächinger</div>
+            <div class="title__name">{{ OWNER_NAME }}</div>
             <div class="title__profession">
               Heilpraktikerin &amp; Physiotherapeutin
             </div>
@@ -24,7 +24,7 @@
           </div>
 
           <p class="q-pt-sm" style="font-size:0.75rem">&copy; {{ new Date().getFullYear() }}
-            Elfriede Steil-Schächinger.
+            {{ OWNER_NAME }}.
             Alle Rechte vorbehalten.
           </p>
         </div>
@@ -37,6 +37,7 @@
 import { defineComponent } from 'vue';
 
 import HpsLogo from 'components/HpsLogo.vue';
+import { OWNER_NAME } from 'src/config';
 
 export default defineComponent({
   name: 'RawLayout',
@@ -50,7 +51,9 @@ export default defineComponent({
   },
 
   setup() {
-    return {};
+    return {
+      OWNER_NAME,
+    };
   },
 });
 </script>
@@ -77,7 +80,7 @@ export default defineComponent({
     margin-top: 0;
 
     @media screen and (max-width: $breakpoint-sm-max) {
-      font-size: 1.375rem;
+      font-size: 1.425rem;
     }
   }
 
