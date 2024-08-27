@@ -57,6 +57,7 @@ export const generateOrganizationJson = () => {
     logo: `${config.WEB_HOST}/icons/apple-touch-icon.png`,
     email: config.EMAIL_ADDRESS,
     telephone: config.PHONE_NUMBER,
+    priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
       streetAddress: config.STREET_ADDRESS,
