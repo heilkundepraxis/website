@@ -1,0 +1,15 @@
+/* TEAM */
+
+    Owner: Elfriede Steil-Schächinger
+    Site: https://www.heilkundepraxis-steil.de
+    Location: Unterwössen, Germany
+
+
+/* SITE */
+
+    Last update: 2024/08/28
+    Language: Deutsch
+    Doctype: HTML5
+    Standards:   ES6, CSS3, HTML5
+    Components: Next.js, React, Tailwind CSS
+    IDE: Visual Studio Code, GIMP

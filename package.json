@@ -1,0 +1,33 @@
+{
+  "name": "heilkundepraxis",
+  "description": "Praxis für Naturheilkunde und Physiotherapie in Unterwössen und Umgebung.",
+  "version": "1.2.0",
+  "private": true,
+  "author": "Manuel Schächinger <manuel@schaechinger.com>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "^14.2.5",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.5",
+    "postcss": "^8",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
+  }
+}
