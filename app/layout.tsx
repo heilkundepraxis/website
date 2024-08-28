@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://www.schaechinger.com',
   },
   openGraph: {
-    images: '/images/heilkundepraxis-steil-header-logo.jpg',
+    images: `${WEB_HOST}/images/heilkundepraxis-steil-header-logo.png`,
     siteName: `Heilkundepraxis ${OWNER_NAME}`,
     type: 'website',
     locale: 'de',
