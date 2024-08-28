@@ -10,10 +10,6 @@ import Provider from '@components/organisms/Provider';
 
 import '@/css/style.scss';
 
-export const generateStaticParams = () => (
-  supportedLangs.map((locale) => ({ locale }))
-);
-
 export const metadata: Metadata = {
   title: {
     template: `%s – Heilkundepraxis ${OWNER_NAME}`,
