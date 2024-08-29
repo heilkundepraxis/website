@@ -30,7 +30,7 @@ const HomePage = () => {
         <div className="bg-primary-200 p-2">
           <h2 className="text-h2">Kontakt</h2>
 
-          <Contact color="text-secondary-500 hover:text-secondary-600" />
+          <Contact color="text-primary-600" />
         </div>
 
         <div className="bg-primary-200 p-2">

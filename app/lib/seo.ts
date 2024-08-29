@@ -1,5 +1,6 @@
 import * as config from '@app/config';
 import { isProd } from '@app/utils';
+import { type Metadata } from 'next';
 
 const wrapJson = (type: string, json: any) => ({
   '@context': 'https://schema.org',
@@ -56,7 +57,7 @@ export const generateOrganizationJson = () => {
   );
 };
 
-export const generatePageMeta = (identifier: string) => {
+export const generatePageMeta = (identifier: string): Metadata => {
   const languages: Record<string, string> = {
     de: `${config.WEB_HOST}${identifier}`,
   };
@@ -64,7 +65,6 @@ export const generatePageMeta = (identifier: string) => {
   return {
     alternates: {
       canonical: languages.de,
-      languages,
     },
     robots: {
       index: isProd(),
