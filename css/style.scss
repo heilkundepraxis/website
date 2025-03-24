@@ -1,8 +1,9 @@
+@use "components/lists";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import 'components/lists';
 
 @layer base {
   .text-h1 {
