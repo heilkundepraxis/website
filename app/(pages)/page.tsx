@@ -21,19 +21,19 @@ const HomePage = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="bg-primary-200 p-2">
+        <div className="bg-primary-100 p-2">
           <h2 className="text-h2">Anschrift</h2>
 
           <Address />
         </div>
 
-        <div className="bg-primary-200 p-2">
+        <div className="bg-primary-100 p-2">
           <h2 className="text-h2">Kontakt</h2>
 
           <Contact color="text-primary-600" />
         </div>
 
-        <div className="bg-primary-200 p-2">
+        <div className="bg-primary-100 p-2">
           <h2 className="text-h2">Behandlungszeiten</h2>
 
           <OpeningHours />
