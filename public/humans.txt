@@ -2,14 +2,19 @@
 
     Owner: Elfriede Steil-Schächinger
     Site: https://www.heilkundepraxis-steil.de
-    Location: Unterwössen, Germany
+    From: Unterwössen, Germany
+
+    Web developer: Manuel Schächinger
+    Site: https://www.schaechinger.com
+    GitHub: schaechinger
+    From: Ottobrunn, Germany
 
 
 /* SITE */
 
-    Last update: 2024/08/28
+    Last update: 2026/02/01
     Language: Deutsch
     Doctype: HTML5
-    Standards:   ES6, CSS3, HTML5
+    Standards: ES2020, CSS3, HTML5
     Components: Next.js, React, Tailwind CSS
-    IDE: Visual Studio Code, GIMP
+    Software: Visual Studio Code, GIMP

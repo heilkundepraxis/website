@@ -1,0 +1,57 @@
+@use "tailwindcss";
+
+:root {
+  --background: #fff;
+  --foreground: #111;
+
+  --primary-light: #b7d161;
+  --primary-dark: #8ba630;
+  --primary: var(--primary-light);
+  --accent-light: #fa9b20;
+  --accent-dark: #c16f04;
+  --accent: var(--accent-light);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-clear-sans);
+
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #22292e;
+    --foreground: #fff;
+
+    // --primary: var(--primary-dark);
+    // --accent: var(--accent-dark);
+  }
+}
+
+.text-h1,
+.text-h2,
+.text-h3 {
+  @apply text-[#111] dark:text-[#fff] font-normal;
+}
+.text-h1 {
+  @apply relative text-4xl mb-6;
+}
+.text-h2 {
+  @apply text-2xl mb-4;
+}
+.text-h3 {
+  @apply text-xl mb-2;
+}
+
+a {
+  @apply text-primary hover:text-primary-dark font-bold underline transition-colors;
+
+  &.inline-link {
+    @apply no-underline hover:underline hover:underline-offset-4;
+  }
+}

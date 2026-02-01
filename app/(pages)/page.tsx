@@ -15,25 +15,25 @@ const HomePage = () => {
     <>
       <div>
         <section id="willkommen">
-          <h1 className="text-h1 mb-1">Willkommen</h1>
+          <h1 className="text-h1 mb-1!">Willkommen</h1>
           <p className="mb-6 sm:mb-10">in der Heilkundepraxis von {OWNER_NAME}</p>
         </section>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="bg-primary-100 p-2">
+        <div className="bg-primary/20 dark:bg-primary/40 p-2">
           <h2 className="text-h2">Anschrift</h2>
 
           <Address />
         </div>
 
-        <div className="bg-primary-100 p-2">
+        <div className="bg-primary/20 dark:bg-primary/40 p-2">
           <h2 className="text-h2">Kontakt</h2>
 
-          <Contact color="text-primary-600" />
+          <Contact color="text-primary-dark! dark:text-foreground!" />
         </div>
 
-        <div className="bg-primary-100 p-2">
+        <div className="bg-primary/20 dark:bg-primary/40 p-2">
           <h2 className="text-h2">Behandlungszeiten</h2>
 
           <OpeningHours />

@@ -7,7 +7,7 @@ import type { LayoutProps } from '@app/interfaces';
 import Footer from '@components/organisms/Footer';
 import Header from '@components/organisms/Header';
 
-import '@/css/style.scss';
+import '@/app/globals.scss';
 
 export const metadata: Metadata = {
   title: {
@@ -33,7 +33,7 @@ const RootLayout = async ({ children }: LayoutProps) => (
     <head>
       <link type="text/plain" rel="author" href={`${WEB_HOST}/humans.txt`} />
     </head>
-    <body className="text-dark-950 dark:text-dark-200 bg-dark-50 dark:bg-dark-800">
+    <body className="text-foreground bg-background">
       <div className="w-full max-w-screen-xl mx-auto">
         <Header />
 

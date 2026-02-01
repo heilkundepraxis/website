@@ -19,7 +19,7 @@ const Contact = ({ color }: Props) => (
       <div key={contact.type} className="flex gap-4">
         <div className="flex-none w-11">{contact.type}:</div>
         <div className="flex-1">
-          <a href={contact.href} className={clsx('underline', color || 'text-primary-500')}>{contact.label}</a>
+          <a href={contact.href} className={clsx('underline', color)}>{contact.label}</a>
         </div>
       </div>
     ))}
